@@ -1,4 +1,9 @@
+'use client';
+
+import { scrollToSection } from '@/app/utils/scroll';
+
 export default function Hero() {
+
   return (
     <section className="bg-gradient-to-br from-violet-900 to-violet-700 text-white">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 py-20 md:flex-row md:py-28">
@@ -18,11 +23,13 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
-            <button className="rounded-xl bg-white px-7 py-3 font-semibold text-violet-900 transition hover:scale-105">
+            <button className="rounded-xl bg-white px-7 py-3 font-semibold text-violet-900 transition hover:scale-105 cursor-pointer">
               Solicitar orçamento
             </button>
 
-            <button className="rounded-xl border border-white px-7 py-3 transition hover:bg-white hover:text-violet-900">
+            <button
+              onClick={() => scrollToSection('servicos')}
+              className="rounded-xl border border-white px-7 py-3 transition hover:bg-white hover:text-violet-900 cursor-pointer">
               Conhecer serviços
             </button>
           </div>
