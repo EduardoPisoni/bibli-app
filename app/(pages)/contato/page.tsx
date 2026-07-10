@@ -1,5 +1,5 @@
 import { Mail, Phone } from 'lucide-react';
-import PageHero from '../components/shared/pageHero';
+import PageHero from '../../components/shared/pageHero';
 
 export default function Contact() {
   return (
@@ -8,54 +8,6 @@ export default function Contact() {
         title='Vamos conversar?'
         subtitle='Entre em contato para solicitar um orçamento ou tirar dúvidas sobre os serviços.'
       />
-
-      {/* <section className="bg-white py-24 text-stone-800">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold">
-            Contatos
-          </h2>
-
-          <div className="flex justify-center items-center gap-6 mt-12 flex-wrap">
-            <div className='flex flex-col items-center w-2/5 gap-4'>
-              <h3 className="text-2xl font-semibold">WhatsApp</h3>
-
-              <p className="text-stone-600 leading-7">
-                Tire suas dúvidas, solicite um orçamento ou agende uma conversa.
-                Responderei o mais breve possível.
-              </p>
-
-              <a
-                href="https://wa.me/555484259545"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-xl bg-[#27ba5e] hover:bg-[#25a956] px-6 py-3 font-semibold text-white shadow-lg transition-all hover:-translate-y-1"
-              >
-                <Phone size={18} />
-                WhatsApp
-              </a>
-            </div>
-
-            <div className='w-px min-h-40 h-full bg-stone-200'></div>
-
-            <div className='flex flex-col items-center w-2/5 gap-4'>
-              <h3 className="text-2xl font-semibold">E-mail</h3>
-
-              <p className="text-stone-600 leading-7">
-                Prefere um contato mais formal? Envie sua mensagem por e-mail e retornarei
-                com todas as informações necessárias.
-              </p>
-
-              <a
-                href="mailto:marianabertuol04@gmail.com"
-                className="flex items-center gap-2 rounded-xl bg-[#EA4335] px-6 py-3 font-semibold text-white shadow-lg transition-all hover:-translate-y-1 hover:bg-[#d33426]"
-              >
-                <Mail size={18} />
-                E-mail
-              </a>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="bg-white py-24 text-stone-800">
         <div className="max-w-5xl mx-auto px-6 text-center">

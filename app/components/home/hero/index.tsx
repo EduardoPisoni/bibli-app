@@ -1,6 +1,6 @@
 'use client';
 
-import { scrollToSection } from '@/app/utils/scroll';
+import { scrollToSection } from '@/app/_utils/scroll';
 
 export default function Hero() {
 
