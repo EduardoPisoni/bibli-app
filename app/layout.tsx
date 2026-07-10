@@ -1,6 +1,7 @@
 import "./globals.css";
 import Header from './components/shared/header';
 import Footer from './components/shared/footer';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 export default function RootLayout({
   children,
@@ -19,6 +20,7 @@ export default function RootLayout({
             {children}
           </main>
         </body>
+        <GoogleAnalytics gaId="G-5VBBWP9WTE" />
       </html>
       <Footer />
     </>
