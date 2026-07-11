@@ -8,6 +8,7 @@ import {
   ClipboardList,
   HeartHandshake,
   ArrowRight,
+  ClipboardCheck,
 } from "lucide-react";
 
 import PageHero from '../../components/shared/pageHero';
@@ -139,8 +140,7 @@ export default function About() {
 
       {/* Áreas */}
       <section className="bg-white py-24">
-        <div className="max-w-6xl mx-auto px-6">
-
+        <div className="flex flex-col items-center max-w-6xl mx-auto px-6">
           <div className="text-center">
             <span className="uppercase tracking-widest text-violet-700 font-semibold text-sm">
               Especialidades
@@ -152,29 +152,30 @@ export default function About() {
           </div>
 
           <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
+            <AreaCard
+              icon={<BookOpen />}
+              title="Processamento Técnico"
+            />
             <AreaCard
               icon={<Library />}
-              title="Gestão de Acervos"
+              title="Organização Física do Acervo"
             />
-
             <AreaCard
-              icon={<FolderKanban />}
-              title="Catalogação"
+              icon={<ClipboardCheck />}
+              title="Consultoria e Diagnósticos"
             />
-
-            <AreaCard
-              icon={<ClipboardList />}
-              title="Organização"
-            />
-
             <AreaCard
               icon={<Users />}
-              title="Consultoria"
+              title="Gestão Contínua após entrega"
             />
-
           </div>
 
+          <Link
+            href="/servicos"
+            className="inline-flex items-center gap-2 mt-10 rounded-xl bg-violet-700 px-12 py-3 font-semibold text-white transition hover:scale-105"
+          >
+            Saiba mais
+          </Link>
         </div>
       </section>
 
@@ -295,7 +296,7 @@ function AreaCard({
 
 function Item({ text }: { text: string }) {
   return (
-    <div className="flex items-start gap-4 rounded-xl bg-white p-6 shadow-sm">
+    <div className="flex items-start gap-4 rounded-xl bg-white p-6 shadow-sm hover:shadow-md transition">
       <BadgeCheck className="mt-1 text-violet-700 shrink-0" />
       <p className="leading-7 text-stone-600">{text}</p>
     </div>

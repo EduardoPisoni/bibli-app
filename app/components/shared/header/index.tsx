@@ -20,6 +20,9 @@ export default function Header() {
         </h1>
 
         <nav className="hidden md:flex gap-8 text-sm">
+          <Link href="/servicos" className={`hover:text-violet-700 ${isCurrentPage('servicos')}`}>
+            Serviços
+          </Link>
           <Link href="/sobre" className={`hover:text-violet-700 ${isCurrentPage('sobre')}`}>
             Sobre
           </Link>

@@ -34,25 +34,6 @@ export default function About() {
           </div>
         ))}
       </div>
-
-      <h3 className="text-2xl font-bold mt-12 text-violet-900">
-        Especializações
-      </h3>
-
-      <div className="grid md:grid-cols-2 gap-6 mt-8">
-        {[
-          "Gestão de bibliotecas universitárias",
-          "Arquivologia",
-        ].map((item) => (
-          <div
-            key={item}
-            className="bg-white rounded-xl shadow p-6 transition-all hover:-translate-y-1"
-          >
-            <BookOpen className="mx-auto text-violet-700" />
-            <p className="mt-4 font-medium">{item}</p>
-          </div>
-        ))}
-      </div>
     </section>
   );
 };

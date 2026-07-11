@@ -3,14 +3,16 @@ import {
   Library,
   FolderOpen,
   ClipboardCheck,
+  Users,
 } from "lucide-react";
 import Card from '../../shared/card';
+import Link from 'next/link';
 
 export default function Services() {
   return (
     <section
       id="servicos"
-      className="max-w-6xl mx-auto px-6 py-24"
+      className="flex flex-col items-center max-w-6xl mx-auto px-6 py-24"
     >
       <div className="text-center mb-14">
         <h2 className="text-4xl font-bold">
@@ -31,15 +33,9 @@ export default function Services() {
         />
 
         <Card
-          icon={<FolderOpen />}
+          icon={<Library />}
           title="Organização"
           text="Reestruturação física e lógica dos materiais."
-        />
-
-        <Card
-          icon={<Library />}
-          title="Implantação"
-          text="Criação de bibliotecas e organização inicial."
         />
 
         <Card
@@ -47,7 +43,20 @@ export default function Services() {
           title="Consultoria"
           text="Planejamento e acompanhamento técnico."
         />
+
+        <Card
+          icon={<Users />}
+          title="Gestão Contínua"
+          text="Suporte, adições de material e gestão do acervo."
+        />
       </div>
+
+      <Link
+        href="/servicos"
+        className="inline-flex items-center gap-2 mt-10 rounded-xl bg-violet-700 px-12 py-3 font-semibold text-white transition hover:scale-105"
+      >
+        Saiba mais
+      </Link>
     </section>
   );
 };
