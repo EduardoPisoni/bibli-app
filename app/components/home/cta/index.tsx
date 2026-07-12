@@ -1,7 +1,11 @@
+'use client'
+
 import {
   Phone,
   Mail,
 } from "lucide-react";
+
+import { sendGAEvent } from '@next/third-parties/google';
 
 export default function CTA() {
   return (
@@ -22,6 +26,7 @@ export default function CTA() {
         <div className="flex justify-center gap-6 mt-12 flex-wrap">
           <a
             href="https://wa.me/555484259545"
+            onClick={() => sendGAEvent('event', 'contato_whatsapp')}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-xl bg-[#27ba5e] hover:bg-[#25a956] px-6 py-3 font-semibold text-white shadow-lg transition-all hover:-translate-y-1"

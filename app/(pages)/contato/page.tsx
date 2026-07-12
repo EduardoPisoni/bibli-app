@@ -1,5 +1,9 @@
+'use client'
+
 import { Mail, Phone } from 'lucide-react';
 import PageHero from '../../components/shared/pageHero';
+
+import { sendGAEvent } from '@next/third-parties/google';
 
 export default function Contact() {
   return (
@@ -43,6 +47,7 @@ export default function Contact() {
 
               <a
                 href="https://wa.me/555484259545"
+                onClick={() => sendGAEvent('event', 'contato_whatsapp')}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-[#128C7E] px-6 py-3 font-semibold text-white shadow-lg transition-all hover:-translate-y-1 hover:bg-[#0f766e]"
@@ -74,6 +79,7 @@ export default function Contact() {
 
               <a
                 href="mailto:marianabertuol04@gmail.com"
+                onClick={() => sendGAEvent('event', 'contato_email')}
                 className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl border border-violet-700 bg-white px-6 py-3 font-semibold text-violet-700 shadow-sm transition-all hover:-translate-y-1 hover:bg-violet-700 hover:text-white"
               >
                 <Mail size={18} />

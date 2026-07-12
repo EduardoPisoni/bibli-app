@@ -49,7 +49,7 @@ export default function About() {
 
               <p className="mt-6 text-stone-600 leading-8">
                 Organize seu acervo seguindo padrões técnicos para facilitar a
-                localização, identificação e recuperação das informações.
+                identificação, localização e recuperação das informações.
               </p>
             </div>
 

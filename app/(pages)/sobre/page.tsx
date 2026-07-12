@@ -1,14 +1,13 @@
 import {
   GraduationCap,
   BookOpen,
-  FolderKanban,
   Library,
   BadgeCheck,
   Users,
-  ClipboardList,
   HeartHandshake,
   ArrowRight,
   ClipboardCheck,
+  Award,
 } from "lucide-react";
 
 import PageHero from '../../components/shared/pageHero';
@@ -85,32 +84,27 @@ export default function About() {
                 </span>
 
                 <h3 className="text-2xl font-semibold mt-1 text-white">
-                  Bacharelado em Biblioteconomia
+                  Bacharel em Biblioteconomia
                 </h3>
 
                 <p className="mt-3 text-white leading-7">
-                  Nome do Lugar • Ano de conclusão
+                  Universidade de Caxias do Sul/UCS • <b>Com Laurea Acadêmica</b>
                 </p>
               </div>
             </div>
-
-            <div className="flex flex-col sm:flex-row gap-6 rounded-2xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            
+            <div className="flex flex-col sm:flex-row gap-6 rounded-2xl border-2 border-violet-300 bg-violet-50 p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-violet-100">
-                <BookOpen className="text-violet-700" />
+                <Award className="text-violet-700" />
               </div>
 
-              <div>
+              <div className='flex flex-col justify-center'>
                 <span className="text-sm text-violet-700 font-semibold">
-                  Pós Graduação
+                  Reconhecimento academico
                 </span>
-
-                <h3 className="text-2xl font-semibold mt-1">
-                  O nome certinho do curso
+                <h3 className="text-2xl font-semibold mt-1 text-stone-800">
+                  Pelo Conselho Regional de Biblioteconomia 10ª região
                 </h3>
-
-                <p className="mt-3 text-stone-600 leading-7">
-                  Estudo aprofundado sobre alguma coisa bem legal
-                </p>
               </div>
             </div>
 
@@ -121,7 +115,7 @@ export default function About() {
 
               <div>
                 <span className="text-sm text-violet-700 font-semibold">
-                  Pós Graduação
+                  Pós-graduanda
                 </span>
 
                 <h3 className="text-2xl font-semibold mt-1">
@@ -129,7 +123,27 @@ export default function About() {
                 </h3>
 
                 <p className="mt-3 text-stone-600 leading-7">
-                  Arquivos e logia
+                  Faculdade Metropolitana de São Paulo
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-6 rounded-2xl bg-white p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-violet-100">
+                <BookOpen className="text-violet-700" />
+              </div>
+
+              <div>
+                <span className="text-sm text-violet-700 font-semibold">
+                  Especialização
+                </span>
+
+                <h3 className="text-2xl font-semibold mt-1">
+                  Gestão de Bibliotecas Universitárias
+                </h3>
+
+                <p className="mt-3 text-stone-600 leading-7">
+                  Universidade de Caxias do Sul/UCS
                 </p>
               </div>
             </div>
