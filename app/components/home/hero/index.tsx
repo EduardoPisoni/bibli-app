@@ -1,6 +1,7 @@
 'use client';
 
 import { scrollToSection } from '@/app/_utils/scroll';
+import Link from 'next/link';
 
 export default function Hero() {
 
@@ -23,9 +24,11 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
-            <button className="rounded-xl bg-white px-7 py-3 font-semibold text-violet-900 transition hover:scale-105 cursor-pointer">
+            <Link 
+              href={'/contato'}
+              className="rounded-xl bg-white px-7 py-3 font-semibold text-violet-900 transition hover:scale-105 cursor-pointer">
               Solicitar orçamento
-            </button>
+            </Link>
 
             <button
               onClick={() => scrollToSection('servicos')}
