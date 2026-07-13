@@ -1,14 +1,15 @@
 'use client';
 
 import { scrollToSection } from '@/app/_utils/scroll';
+import { HIERARCHY } from '@/app/_types/hierarchy';
 import Link from 'next/link';
+import CustomLink from '../../shared/link';
 
 export default function Hero() {
 
   return (
     <section className="bg-gradient-to-br from-violet-900 to-violet-700 text-white">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 px-6 py-20 md:flex-row md:py-28">
-        {/* Texto */}
         <div className="flex-1 text-center md:text-left">
           <div className="flex text-sm uppercase tracking-[4px] text-violet-200 w-full items-center justify-center md:justify-start">
             Consultoria  <div className='mx-3'>•</div>  Gestão de Acervos
@@ -24,11 +25,11 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">
-            <Link 
-              href={'/contato'}
-              className="rounded-xl bg-white px-7 py-3 font-semibold text-violet-900 transition hover:scale-105 cursor-pointer">
-              Solicitar orçamento
-            </Link>
+            <CustomLink 
+              variant={HIERARCHY.SECONDARY}
+              goTo={"/contato"}
+              text={"Solicitar orçamento"}
+            />
 
             <button
               onClick={() => scrollToSection('servicos')}

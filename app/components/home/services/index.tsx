@@ -1,12 +1,13 @@
 import {
   BookOpen,
   Library,
-  FolderOpen,
   ClipboardCheck,
   Users,
 } from "lucide-react";
+
+import { HIERARCHY } from '@/app/_types/hierarchy';
 import Card from '../../shared/card';
-import Link from 'next/link';
+import CustomLink from '../../shared/link';
 
 export default function Services() {
   return (
@@ -51,12 +52,12 @@ export default function Services() {
         />
       </div>
 
-      <Link
-        href="/servicos"
-        className="inline-flex items-center gap-2 mt-10 rounded-xl bg-violet-700 px-12 py-3 font-semibold text-white transition hover:scale-105"
-      >
-        Saiba mais
-      </Link>
+      <CustomLink 
+        variant={HIERARCHY.PRIMARY}
+        className="px-12 py-3 mt-10"
+        goTo={"/servicos"}
+        text={"Veja os detalhes de cada serviço"}
+      />
     </section>
   );
 };
