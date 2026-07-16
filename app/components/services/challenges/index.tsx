@@ -24,8 +24,9 @@ export default function Challenges() {
         </div>
 
         <div className="mt-20 grid gap-8 md:grid-cols-2">
-          {cards.map((card) => (
+          {cards.map((card, i) => (
             <Card 
+              key={i}
               cardProp={card}
             />
           ))}
