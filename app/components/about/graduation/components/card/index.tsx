@@ -11,20 +11,20 @@ type CardClasses = {
 
 const classesByVariant: Record<HierarchyVariant, CardClasses> = {
   primary: {
-    container: 'bg-violet-800',
-    subtitle: 'text-violet-100',
+    container: 'bg-primary-700',
+    subtitle: 'text-primary-100',
     title: 'text-white',
     text: 'text-white',
   },
   secondary: {
-    container: 'border-2 border-violet-300 bg-violet-50',
-    subtitle: 'text-violet-700',
+    container: 'border-1 border-primary-200 bg-primary-50',
+    subtitle: 'text-primary-700',
     title: 'text-stone-800',
     text: 'text-stone-800',
   },
   tertiary: {
     container: 'bg-white',
-    subtitle: 'text-violet-700',
+    subtitle: 'text-primary-700',
     title: 'text-stone-800',
     text: 'text-stone-600',
   },
@@ -47,7 +47,7 @@ export default function Card({
 
   return (
     <div className={`flex flex-col sm:flex-row gap-6 rounded-2xl p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${classes.container}`}>
-      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-violet-100">
+      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary-100">
         {icon}
       </div>
 

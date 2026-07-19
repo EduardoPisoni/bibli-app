@@ -6,7 +6,7 @@ export default function Method() {
   return (
     <section className="bg-white py-24">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <span className="uppercase tracking-widest text-violet-700 font-semibold text-sm">
+        <span className="uppercase tracking-widest text-primary-700 font-semibold text-sm">
           Método de trabalho
         </span>
 
@@ -22,7 +22,7 @@ export default function Method() {
               </Step>
 
               {step.hasArrow && (
-                <ArrowRight className="hidden lg:block text-violet-300" />
+                <ArrowRight className="hidden lg:block text-secondary" />
               )}
             </div>
           ))}

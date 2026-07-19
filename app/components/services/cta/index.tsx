@@ -4,7 +4,7 @@ import { HIERARCHY } from '@/app/_types/hierarchy';
 
 export default function CTA() {
   return (
-    <section className="bg-violet-950 text-white py-24">
+    <section className="bg-primary-800 text-white py-24">
       <div className="max-w-4xl mx-auto text-center px-6">
         <BookOpen
           className="mx-auto mb-6"

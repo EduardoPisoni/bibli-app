@@ -11,7 +11,7 @@ export default function Card({
 }) {
   return (
     <div className="rounded-2xl border border-stone-200 bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-lg">
-      <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-violet-100 text-violet-700">
+      <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-secondary-100 text-secondary">
         <Icon size={32} />
       </div>
 

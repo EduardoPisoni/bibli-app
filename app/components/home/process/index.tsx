@@ -14,7 +14,7 @@ export default function Process() {
             "Gestão Contínua",
           ].map((item, index) => (
             <div key={item}>
-              <div className="w-16 h-16 rounded-full bg-violet-700 text-white flex items-center justify-center text-2xl font-bold mx-auto">
+              <div className="w-16 h-16 rounded-full bg-primary-500 text-white flex items-center justify-center text-2xl font-bold mx-auto">
                 {index + 1}
               </div>
 

@@ -9,7 +9,7 @@ export default function Realities() {
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="max-w-3xl mx-auto text-center">
-          <span className="uppercase tracking-widest text-violet-700 text-sm font-semibold">
+          <span className="uppercase tracking-widest text-primary-700 text-sm font-semibold">
             Diferentes realidades
           </span>
 

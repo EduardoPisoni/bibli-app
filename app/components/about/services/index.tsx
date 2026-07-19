@@ -8,7 +8,7 @@ export default function Services() {
     <section className="bg-white py-24">
       <div className="mx-auto flex max-w-6xl flex-col items-center px-6">
         <div className="text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-violet-700">
+          <span className="text-sm font-semibold uppercase tracking-widest text-primary-700">
             Especialidades
           </span>
 

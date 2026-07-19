@@ -14,7 +14,7 @@ export default function Plan({
   return (
     <div
       className={`rounded-2xl p-8 ${featured
-        ? "bg-violet-700 text-white scale-105 shadow-xl"
+        ? "bg-primary-600 text-white scale-105 shadow-xl"
         : "bg-white"
         }`}
     >
@@ -34,8 +34,8 @@ export default function Plan({
 
       <button
         className={`mt-10 w-full py-3 rounded-xl font-semibold ${featured
-          ? "bg-white text-violet-700"
-          : "bg-violet-700 text-white"
+          ? "bg-white text-primary-600"
+          : "bg-primary-600 text-white"
           }`}
       >
         Solicitar proposta

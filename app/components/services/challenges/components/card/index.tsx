@@ -18,7 +18,7 @@ export default function Card({ cardProp }: Props) {
 
   return (
     <div className="rounded-3xl bg-white p-8 text-stone-800 shadow-xl transition hover:-translate-y-1">
-      <div className="flex items-center gap-3 text-red-600">
+      <div className="flex items-center gap-3 text-primary-400">
         <ChalIcon size={26} />
         <span className="font-semibold uppercase tracking-wide text-sm">
           Desafio
@@ -33,7 +33,7 @@ export default function Card({ cardProp }: Props) {
         {clallange.text}
       </p>
 
-      <div className="flex items-center mt-8 gap-3 text-violet-700">
+      <div className="flex items-center mt-8 gap-3 text-secondary">
         <SolIcon size={26} />
         <span className="font-semibold uppercase tracking-wide text-sm">
           Solução

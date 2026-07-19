@@ -31,7 +31,7 @@ export default function About() {
             key={item}
             className="bg-white rounded-xl shadow p-6 transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <CheckCircle className="mx-auto text-violet-700" />
+            <CheckCircle className="mx-auto text-secondary" />
             <p className="mt-4 font-medium">{item}</p>
           </div>
         ))}

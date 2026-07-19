@@ -9,7 +9,7 @@ export default function Card({
 }) {
   return (
     <div className="bg-white rounded-2xl shadow-sm p-8 hover:shadow-xl transition">
-      <div className="text-violet-700 mb-6">{icon}</div>
+      <div className="text-primary-700 mb-6">{icon}</div>
 
       <h3 className="font-bold text-xl mb-3">{title}</h3>
 

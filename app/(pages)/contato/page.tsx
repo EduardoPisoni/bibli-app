@@ -26,7 +26,7 @@ export default function Contact() {
           <div className="mt-16 flex flex-wrap items-stretch justify-center gap-10">
 
             {/* WhatsApp */}
-            <div className="flex w-full max-w-sm flex-col items-center rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
+            <div className="flex w-full max-w-sm flex-col items-center rounded-2xl border border-[#6dbbb2] bg-white p-8 shadow-sm">
               <div className="mb-5 rounded-full bg-green-100 p-4">
                 <Phone className="text-[#128C7E]" size={28} />
               </div>
@@ -58,16 +58,16 @@ export default function Contact() {
             </div>
 
             {/* Email */}
-            <div className="flex w-full max-w-sm flex-col items-center rounded-2xl border border-stone-200 bg-white p-8 shadow-sm">
-              <div className="mb-5 rounded-full bg-violet-100 p-4">
-                <Mail className="text-violet-700" size={28} />
+            <div className="flex w-full max-w-sm flex-col items-center rounded-2xl border border-primary-200 bg-white p-8 shadow-sm">
+              <div className="mb-5 rounded-full bg-primary-100 p-4">
+                <Mail className="text-primary-700" size={28} />
               </div>
 
               <h3 className="text-2xl font-semibold">
                 E-mail
               </h3>
 
-              <span className="mt-2 text-sm font-medium uppercase tracking-wide text-violet-700">
+              <span className="mt-2 text-sm font-medium uppercase tracking-wide text-primary-700">
                 Atendimento detalhado
               </span>
 
@@ -80,7 +80,7 @@ export default function Contact() {
               <a
                 href="mailto:marianabertuol04@gmail.com"
                 onClick={() => sendGAEvent('event', 'contato_email')}
-                className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl border border-violet-700 bg-white px-6 py-3 font-semibold text-violet-700 shadow-sm transition-all hover:-translate-y-1 hover:bg-violet-700 hover:text-white"
+                className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl border border-primary-700 bg-white px-6 py-3 font-semibold text-primary-700 shadow-sm transition-all hover:-translate-y-1 hover:bg-primary-700 hover:text-white"
               >
                 <Mail size={18} />
                 Enviar e-mail

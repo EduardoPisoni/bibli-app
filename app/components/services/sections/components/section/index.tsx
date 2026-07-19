@@ -16,8 +16,8 @@ export default function Section({ sectionProp, variant = 'white' }: Props) {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="lg:w-1/3">
-            <div className="w-20 h-20 rounded-2xl bg-violet-100 flex items-center justify-center">
-              <Icon className="text-violet-700" size={38} />
+            <div className="w-20 h-20 rounded-2xl bg-primary-100 flex items-center justify-center">
+              <Icon className="text-primary-700" size={38} />
             </div>
 
             <h2 className="mt-8 text-4xl font-bold">
@@ -58,7 +58,7 @@ export default function Section({ sectionProp, variant = 'white' }: Props) {
               <div className="grid md:grid-cols-2 gap-4 mt-6">
                 {section.beneficts.map((benefict, i) => (
                   <div className='flex gap-2' key={i}>
-                    <CheckCircle className="text-violet-700 w-5" />
+                    <CheckCircle className="text-secondary w-5" />
                     {benefict}
                   </div>
                 ))}

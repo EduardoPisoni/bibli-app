@@ -4,14 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { linksDesktop } from './data';
 
 export default function Header() {
   const pathname = usePathname().split("/")[1];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isCurrentPage = (page?: string) => {
-    return pathname === page ? "font-semibold text-violet-700" : "";
+    return pathname === page ? "font-semibold text-primary-700" : "";
   };
 
   const closeMenu = () => setIsMenuOpen(false);
@@ -39,7 +38,7 @@ export default function Header() {
               Mariana Bertuol
             </p>
 
-            <p className="text-xs text-violet-600 tracking-wide -mt-1">
+            <p className="text-xs text-primary tracking-wide -mt-1">
               Bibliotecária
             </p>
           </div>
@@ -49,35 +48,35 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-8 text-sm">
           <Link
             href="/"
-            className={`transition hover:text-violet-700 ${isCurrentPage("")}`}
+            className={`transition hover:text-primary-700 ${isCurrentPage("")}`}
           >
             Início
           </Link>
 
           <Link
             href="/servicos"
-            className={`transition hover:text-violet-700 ${isCurrentPage("servicos")}`}
+            className={`transition hover:text-primary-700 ${isCurrentPage("servicos")}`}
           >
             Serviços
           </Link>
 
           <Link
             href="/sobre"
-            className={`transition hover:text-violet-700 ${isCurrentPage("sobre")}`}
+            className={`transition hover:text-primary-700 ${isCurrentPage("sobre")}`}
           >
             Sobre
           </Link>
 
           <Link
             href="/contato"
-            className={`transition hover:text-violet-700 ${isCurrentPage("contato")}`}
+            className={`transition hover:text-primary-700 ${isCurrentPage("contato")}`}
           >
             Contato
           </Link>
 
           <Link
             href="/contato"
-            className="rounded-xl bg-violet-700 px-5 py-2 font-medium text-white transition hover:bg-violet-800"
+            className="rounded-xl bg-primary-700 px-5 py-2 font-medium text-white transition hover:bg-primary-800"
           >
             Solicitar orçamento
           </Link>
@@ -86,7 +85,7 @@ export default function Header() {
 
         {/* Mobile Button */}
         <button
-          className="md:hidden rounded-lg p-2 transition hover:bg-violet-100"
+          className="md:hidden rounded-lg p-2 transition hover:bg-primary-100"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Abrir menu"
         >
@@ -145,7 +144,7 @@ export default function Header() {
           <Link
             href="/contato"
             onClick={closeMenu}
-            className="mt-4 rounded-xl bg-violet-700 px-5 py-3 text-center font-medium text-white transition hover:bg-violet-800"
+            className="mt-4 rounded-xl bg-primary-700 px-5 py-3 text-center font-medium text-white transition hover:bg-primary-800"
           >
             Solicitar orçamento
           </Link>

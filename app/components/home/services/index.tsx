@@ -28,25 +28,25 @@ export default function Services() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <Card
-          icon={<BookOpen />}
+          icon={<BookOpen className="text-secondary" />}
           title="Processamento Técnico"
           text="Organização, catalogação e classificação do acervo."
         />
 
         <Card
-          icon={<Library />}
+          icon={<Library className="text-secondary" />}
           title="Organização"
           text="Reestruturação física e lógica dos materiais."
         />
 
         <Card
-          icon={<ClipboardCheck />}
+          icon={<ClipboardCheck className="text-secondary" />}
           title="Consultoria"
           text="Planejamento e acompanhamento técnico."
         />
 
         <Card
-          icon={<Users />}
+          icon={<Users className="text-secondary" />}
           title="Gestão Contínua"
           text="Suporte, adições de material e gestão do acervo."
         />

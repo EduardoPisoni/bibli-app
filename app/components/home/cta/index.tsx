@@ -14,7 +14,7 @@ export default function CTA() {
   return (
     <section
       id="contato"
-      className="bg-violet-950 text-white py-24"
+      className="bg-primary-800 text-white py-24"
     >
       <div className="max-w-3xl mx-auto text-center px-6">
         <BookOpen
@@ -26,7 +26,7 @@ export default function CTA() {
           Vamos conversar?
         </h2>
 
-        <p className="mt-6 text-lg text-violet-100">
+        <p className="mt-6 text-lg text-primary-100">
           Solicite um orçamento ou tire dúvidas sobre os serviços.
         </p>
 

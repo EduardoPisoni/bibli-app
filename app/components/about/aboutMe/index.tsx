@@ -5,7 +5,7 @@ export default function AboutMe() {
     <section className="bg-white py-24 text-stone-800">
       <div className="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
         <Image
-          src="/images/mariana-md.png"
+          src="/images/Mariana.png"
           alt="Bibliotecária"
           className="w-80 rounded-3xl shadow-xl"
           width={340}
@@ -13,7 +13,7 @@ export default function AboutMe() {
         />
 
         <div>
-          <span className="uppercase tracking-widest text-violet-700 text-sm font-semibold">
+          <span className="uppercase tracking-widest text-primary-700 text-sm font-semibold">
             Sobre mim
           </span>
 

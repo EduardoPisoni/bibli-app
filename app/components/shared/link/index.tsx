@@ -11,9 +11,9 @@ type Props = {
 };
 
 const classesByVariant: Record<HierarchyVariant, string> = {
-  [HIERARCHY.PRIMARY]: 'bg-violet-700 text-white',
-  [HIERARCHY.SECONDARY]: 'bg-white text-violet-900',
-  [HIERARCHY.TERTIARY]: 'border border-white hover:bg-white hover:text-violet-900',
+  [HIERARCHY.PRIMARY]: 'bg-primary-700 text-white',
+  [HIERARCHY.SECONDARY]: 'bg-white text-primary-800',
+  [HIERARCHY.TERTIARY]: 'border border-white hover:bg-white hover:text-primary-900',
 };
 
 export default function CustomLink({
