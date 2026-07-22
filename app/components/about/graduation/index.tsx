@@ -7,11 +7,11 @@ export default function Graduation() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center">
           <span className="uppercase tracking-widest text-primary-700 font-semibold text-sm">
-            Formação
+            Trajetória
           </span>
 
           <h2 className="mt-3 text-4xl font-bold">
-            Histórico acadêmico
+            Formações e Conquistas
           </h2>
 
           <p className="mt-4 text-stone-600">

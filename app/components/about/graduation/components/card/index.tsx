@@ -47,7 +47,7 @@ export default function Card({
 
   return (
     <div className={`flex flex-col sm:flex-row gap-6 rounded-2xl p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${classes.container}`}>
-      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary-100">
+      <div className="flex h-14 min-w-14 w-14 items-center justify-center rounded-full bg-primary-100">
         {icon}
       </div>
 

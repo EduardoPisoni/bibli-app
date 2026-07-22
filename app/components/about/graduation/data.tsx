@@ -1,4 +1,4 @@
-import { Award, BookOpen, GraduationCap } from 'lucide-react';
+import { Award, Book, BookOpen, GraduationCap } from 'lucide-react';
 
 import { HIERARCHY } from '@/app/_types/hierarchy';
 
@@ -31,5 +31,17 @@ export const graduationCards: GraduationCardData[] = [
     subtitle: 'Especialização',
     title: 'Gestão de Bibliotecas Universitárias',
     text: 'Universidade de Caxias do Sul/UCS',
+  },
+  {
+    variant: HIERARCHY.TERTIARY,
+    icon: Book,
+    subtitle: 'Coautora do e-book',
+    title: 'Gestão e Inovação em Bibliotecas Universitárias',
+    text: <>
+      <b>Organizado pelo Prof. João Paulo Borges da Silveira</b>.
+      <br />
+      Contribuição com o capítulo "Da impressão ao digital: a evolução dos meios de divulgação científica", 
+      que aborda as transformações dos canais de comunicação científica, desde as publicações impressas até as plataformas digitais contemporâneas.
+    </>,
   },
 ];
