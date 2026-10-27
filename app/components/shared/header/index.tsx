@@ -45,7 +45,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop */}
-        <nav className="hidden md:flex items-center gap-8 text-sm">
+        <nav className="hidden lg:flex items-center gap-8 text-sm">
           <Link
             href="/"
             className={`transition hover:text-primary-700 ${isCurrentPage("")}`}
@@ -58,6 +58,13 @@ export default function Header() {
             className={`transition hover:text-primary-700 ${isCurrentPage("servicos")}`}
           >
             Serviços
+          </Link>
+
+          <Link
+            href="/atendimento"
+            className={`transition hover:text-primary-700 ${isCurrentPage("atendimento")}`}
+          >
+            Atendimento
           </Link>
 
           <Link
@@ -85,7 +92,7 @@ export default function Header() {
 
         {/* Mobile Button */}
         <button
-          className="md:hidden rounded-lg p-2 transition hover:bg-primary-100"
+          className="lg:hidden rounded-lg p-2 transition hover:bg-primary-100"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Abrir menu"
         >
@@ -103,7 +110,7 @@ export default function Header() {
           lg:hidden
           ${
             isMenuOpen
-              ? "max-h-96 border-t border-stone-200"
+              ? "max-h-[32rem] border-t border-stone-200"
               : "max-h-0"
           }
         `}
@@ -123,6 +130,14 @@ export default function Header() {
             onClick={closeMenu}
           >
             Serviços
+          </Link>
+
+          <Link
+            href="/atendimento"
+            className={`py-3 ${isCurrentPage("atendimento")}`}
+            onClick={closeMenu}
+          >
+            Atendimento
           </Link>
 
           <Link

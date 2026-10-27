@@ -10,6 +10,11 @@ export const linksDesktop = [
     text: "Serviços",
   },
   {
+    href: "/atendimento",
+    currentPage: "atendimento",
+    text: "Atendimento",
+  },
+  {
     href: "/sobre",
     currentPage: "sobre",
     text: "Sobre",

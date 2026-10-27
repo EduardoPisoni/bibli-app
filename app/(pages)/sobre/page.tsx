@@ -5,6 +5,15 @@ import Services from '@/app/components/about/services';
 import Diferentials from '@/app/components/about/diferentials';
 import Method from '@/app/components/about/method';
 import CTA from '@/app/components/about/cta';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Sobre',
+  description: 'Conheça Mariana Bertuol: formação acadêmica, diferenciais e método de trabalho.',
+  alternates: {
+    canonical: '/sobre',
+  },
+};
 
 export default function About() {
   return (

@@ -2,7 +2,7 @@
 
 import { scrollToSection } from '@/app/_utils/scroll';
 import { HIERARCHY } from '@/app/_types/hierarchy';
-import Link from 'next/link';
+import Image from 'next/image';
 import CustomLink from '../../shared/link';
 
 export default function Hero() {
@@ -41,10 +41,13 @@ export default function Hero() {
 
         {/* Imagem */}
         <div className="flex flex-1 justify-center">
-          <img
-            src="images/Mariana.png"
-            alt="Bibliotecária"
-            className="w-full max-w-sm rounded-3xl shadow-2xl opacity-90"
+          <Image
+            src="/images/Mariana.png"
+            alt="Foto de Mariana Bertuol, bibliotecária"
+            className="w-full h-auto max-w-sm rounded-3xl shadow-2xl opacity-90"
+            width={520}
+            height={692}
+            priority
           />
         </div>
       </div>

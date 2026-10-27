@@ -1,6 +1,7 @@
 import {
   CheckCircle,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Plan({
   title,
@@ -32,14 +33,15 @@ export default function Plan({
         ))}
       </ul>
 
-      <button
-        className={`mt-10 w-full py-3 rounded-xl font-semibold ${featured
+      <Link
+        href="/contato"
+        className={`mt-10 block w-full py-3 rounded-xl font-semibold text-center ${featured
           ? "bg-white text-primary-600"
           : "bg-primary-600 text-white"
           }`}
       >
         Solicitar proposta
-      </button>
+      </Link>
     </div>
   );
 }

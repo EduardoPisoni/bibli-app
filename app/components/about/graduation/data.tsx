@@ -40,7 +40,7 @@ export const graduationCards: GraduationCardData[] = [
     text: <>
       <b>Organizado pelo Prof. João Paulo Borges da Silveira</b>.
       <br />
-      Contribuição com o capítulo "Da impressão ao digital: a evolução dos meios de divulgação científica", 
+      Contribuição com o capítulo &ldquo;Da impressão ao digital: a evolução dos meios de divulgação científica&rdquo;,
       que aborda as transformações dos canais de comunicação científica, desde as publicações impressas até as plataformas digitais contemporâneas.
     </>,
   },

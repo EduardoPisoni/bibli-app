@@ -4,6 +4,16 @@ import Process from './components/home/process';
 import Plans from './components/home/plans';
 import About from './components/home/about';
 import CTA from './components/home/cta';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Bibliotecária para catalogação e organização de acervos | Mariana Bertuol',
+  },
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function App() {
   return (

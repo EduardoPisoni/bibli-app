@@ -1,9 +1,16 @@
-'use client'
-
+import type { Metadata } from 'next';
 import { Mail, Phone } from 'lucide-react';
 import PageHero from '../../components/shared/pageHero';
+import TrackedLink from '@/app/components/shared/trackedLink';
+import { CONTACT } from '@/app/_config/site';
 
-import { sendGAEvent } from '@next/third-parties/google';
+export const metadata: Metadata = {
+  title: 'Contato',
+  description: 'Entre em contato para solicitar um orçamento ou tirar dúvidas sobre os serviços.',
+  alternates: {
+    canonical: '/contato',
+  },
+};
 
 export default function Contact() {
   return (
@@ -45,16 +52,16 @@ export default function Contact() {
                 acervo.
               </p>
 
-              <a
-                href="https://wa.me/555484259545"
-                onClick={() => sendGAEvent('event', 'contato_whatsapp')}
+              <TrackedLink
+                href={CONTACT.whatsapp}
+                event="contato_whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-[#128C7E] px-6 py-3 font-semibold text-white shadow-lg transition-all hover:-translate-y-1 hover:bg-[#0f766e]"
               >
                 <Phone size={18} />
                 Conversar no WhatsApp
-              </a>
+              </TrackedLink>
             </div>
 
             {/* Email */}
@@ -77,14 +84,14 @@ export default function Contact() {
                 personalizada.
               </p>
 
-              <a
-                href="mailto:marianabertuol04@gmail.com"
-                onClick={() => sendGAEvent('event', 'contato_email')}
+              <TrackedLink
+                href={`mailto:${CONTACT.email}`}
+                event="contato_email"
                 className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl border border-primary-700 bg-white px-6 py-3 font-semibold text-primary-700 shadow-sm transition-all hover:-translate-y-1 hover:bg-primary-700 hover:text-white"
               >
                 <Mail size={18} />
                 Enviar e-mail
-              </a>
+              </TrackedLink>
             </div>
 
           </div>
