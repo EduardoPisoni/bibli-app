@@ -1,7 +1,8 @@
 import Hero from './components/home/hero';
 import Services from './components/home/services';
 import Process from './components/home/process';
-import Plans from './components/home/plans';
+// Oculto até os planos serem definidos
+// import Plans from './components/home/plans';
 import About from './components/home/about';
 import CTA from './components/home/cta';
 import type { Metadata } from 'next';
@@ -24,7 +25,7 @@ export default function App() {
 
       <Process />
 
-      <Plans />
+      {/* <Plans /> */}
 
       <About />
 
